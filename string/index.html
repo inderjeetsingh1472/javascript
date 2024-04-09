@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+    <style>
+.container{
+
+    width: 45px;
+    height: 45px;
+    border:2px solid blue;
+    margin: 45px;
+    padding: 45px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">inderjeet singh</div>
+    <div class="container">inderjeet singh</div>
+    <div class="container">inderjeet singh</div>
+    <div class="container">inderjeet singh</div>
+    <div  id="inder" class="container">inderjeet singh</div>
+    <script>
+        document.title="i am too good"
+        console.log(document.title)
+        console.log(document.body)
+        document.body.style.backgroundColor= "red"
+        let gun= document.querySelector(".container")
+        gun.style.backgroundColor="green";
+        document.querySelectorAll(".container").forEach(e =>{
+        e.style.backgroundColor="yellow";
+        })
+        
+    </script>
+</body>
+</html>
