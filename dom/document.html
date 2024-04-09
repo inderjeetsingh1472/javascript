@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-object-model</title>
+    <style>
+        .container{
+            /* width: 45px; */
+            /* height: 45px; */
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">inderjeet singh dandiwal</div>
+        <div class="box box2">inderjeet singh dandiwal</div>
+        <div class="box box3">inderjeet singh dandiwal</div>
+        <div class="box box4">inderjeet singh dandiwal</div>
+        <div class="box box5">inderjeet singh dandiwal</div>
+    </div>
+
+        <table>
+            <tr>
+              <td>Name:</td>
+              <td>inderjeet singh</td>
+            </tr>
+            <tr>
+              <td>Roll No</td>
+              <td>[Your Roll No.]</td>
+            </tr>
+          </table>
+          
+    <script>
+        document.body.childNodes[1].childNodes[4].firstSibling.style.backgroundColor="green";
+        
+    </script>
+</body>
+</html>
